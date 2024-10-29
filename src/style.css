@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 3200px;
+}
+
+/*Cabeçalho*/
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 3px solid lightgray;
+    margin-bottom: 50px;
+}
+
+nav>h1{
+    font-size: 40px;
+}
+
+#menu{
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+
+    &#menu>li{
+        margin-left: 30px;
+        cursor: pointer;
+    }
+}
+
+#menu>li:hover{
+    color: #00aeff;
+}
+
+/* Postagens */
+
+#postagens{
+    display: block;
+    width: 1250px;
+    padding-left: 100px;
+}
+
+.capa{
+    position: relative;
+    width: 1250px;
+    height: 700px;
+    padding-left: -50;
+    border-radius: 10px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.subtitulo{
+    font-weight: 100;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.autor{
+    margin-bottom: 20px;
+}
+
+details summary::-webkit-details-marker { /*Remove o marcador padrão do details*/
+    display: none;
+}
+
+details summary{
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 80px;
+    color: rgb(82, 82, 82);
+    font-size: 22px;
+}
+
+details[open] summary {
+    margin-bottom: 5px;
+}
+
+.maisTexto{
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 28px;
+    margin-bottom: 80px;
+}
+
+
+/*Menus Laterais*/
+
+#menuLateral{
+    position: relative;
+    bottom: 3085px;
+    left: 1520px;
+    width: 500px;
+}
+
+#busca{
+    border: 2px solid #525252;
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    height: 200px;
+    cursor: context-menu;
+
+    &#busca>input{
+        height: 60px;
+        width: 250px;
+        padding-left: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        cursor: text;
+    }
+
+    &#busca>button{
+        position: relative;
+        right: 15px;
+        top: 2px;
+        background-color: #00aeff;
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        height: 62px;
+        width: 120px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    &#busca>button:hover{
+        color: #000;
+        font-size: 28px;
+    }
+}
+
+#categorias{
+    border: 2px solid #525252;
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    height: 300px;
+    cursor: context-menu;
+
+    &#categorias>ul{
+        margin-top: 10px;
+        list-style: none;
+        line-height: 40px;
+        font-size: 25px;
+    }
+
+    &#categorias>ul>li:hover{
+        color: #00aeff;
+        cursor: pointer;
+        transform: scale(1.02);
+        
+    }
+}
+
+#tags{
+    border: 2px solid #525252;
+    padding: 30px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    height: 350px;
+    cursor: context-menu;
+
+    &#tags>ul{
+        display: flex;
+        margin-top: 10px;
+        list-style: none;
+        line-height: 40px;
+        font-size: 25px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -15px;
+    }
+
+    &#tags>ul>li{
+        background-color: #c9c9c9;
+        margin: 20px;
+        width: 100px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 3px;
+    }
+
+    &#tags>ul>li:hover{
+        color: #ffffff;
+        cursor: pointer;
+        transform: scale(1.06);
+        width: 110px;
+        font-weight: bolder;
+        
+    }
+}
+
+
+/*Footer*/
+
+footer{
+    position: relative;
+    bottom: 1000px;
+    text-align: center;
+    border-top: 3px solid lightgray;
+    padding-top: 50px;
+    line-height: 40px;
+}
